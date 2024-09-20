@@ -818,6 +818,36 @@ const renderTopLanguages = (topLangs, options = {}) => {
   card.setHideTitle(hide_title);
   card.setCSS(
     `
+    /* CUSTOM STUFFS */
+    /* GITHUB LIGHT MODE */
+    .header {
+      fill: #1f2328 !important;
+    }
+
+    .card-body {
+      stroke: rgb(209, 217, 224) !important;
+    }
+
+    .lang-name {
+      fill: #1f2328 !important;
+    }
+
+    /* GITHUB DARK MODE */
+    @media (prefers-color-scheme: dark) {
+      .header {
+        fill: #f0f6fc !important;
+      }
+
+      .card-body {
+        fill: #0D1117 !important;
+        stroke: #3d444d !important;
+      }
+
+      .lang-name {
+        fill: #f0f6fc !important;
+      }
+    }
+
     @keyframes slideInAnimation {
       from {
         width: 0;

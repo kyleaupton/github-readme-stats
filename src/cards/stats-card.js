@@ -137,6 +137,38 @@ const getStyles = ({
   progress,
 }) => {
   return `
+    /* CUSTOM STUFFS */
+    /* GITHUB LIGHT MODE */
+    .header {
+      fill: #1f2328 !important;
+    }
+
+    .card-body {
+      stroke: rgb(209, 217, 224) !important;
+    }
+
+    .stat,
+    .rank-text {
+      fill: #1f2328 !important;
+    }
+
+    /* GITHUB DARK MODE */
+    @media (prefers-color-scheme: dark) {
+      .header {
+        fill: #f0f6fc !important;
+      }
+
+      .card-body {
+        fill: #0D1117 !important;
+        stroke: #3d444d !important;
+      }
+
+      .stat,
+      .rank-text {
+        fill: #f0f6fc !important;
+      }
+    }
+
     .stat {
       font: 600 14px 'Segoe UI', Ubuntu, "Helvetica Neue", Sans-Serif; fill: ${textColor};
     }

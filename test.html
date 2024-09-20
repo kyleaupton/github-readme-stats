@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-color-mode="dark" data-dark-theme="dark_dim">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -24,16 +24,29 @@
     </style>
   </head>
   <body>
-    <img
-      height="195px"
-      src="http://localhost:9000/top-langs?username=kyleaupton&exclude_repo=node-wimlib-split,lan-scan&layout=compact&theme=github_dark"
-      alt="Kyle Language stats"
-    />
+    <div
+      style="
+        display: flex;
+        justify-content: space-between;
+        width: 894px;
+        padding: 24px;
+        border: 1px solid white;
+        border-radius: 6px;
+        border-color: #3d444d;
+        box-sizing: border-box;
+      "
+    >
+      <img
+        height="195px"
+        src="http://localhost:9000/top-langs?username=kyleaupton&exclude_repo=node-wimlib-split,lan-scan&layout=compact"
+        alt="Kyle Language stats"
+      />
 
-    <img
-      height="195px"
-      src="http://localhost:9000/gist?id=bbfce31e0217a3689c8d961a356cb10d"
-      alt="Kyle Language stats"
-    />
+      <img
+        height="195px"
+        src="http://localhost:9000/?username=kyleaupton&include_all_commits=true&show_icons=true"
+        alt="Kyle Language stats"
+      />
+    </div>
   </body>
 </html>
