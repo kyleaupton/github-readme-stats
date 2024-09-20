@@ -141,6 +141,7 @@ const getStyles = ({
     /* GITHUB LIGHT MODE */
     .header {
       fill: #1f2328 !important;
+      font-size: 18px !important;
     }
 
     .card-body {
@@ -156,6 +157,7 @@ const getStyles = ({
     @media (prefers-color-scheme: dark) {
       .header {
         fill: #f0f6fc !important;
+        font-size: 18px !important;
       }
 
       .card-body {
