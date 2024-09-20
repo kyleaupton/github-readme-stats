@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      :root {
+        --bgColor-default: #0d1117;
+      }
+
+      body {
+        height: 100vh;
+        width: 100vw;
+        margin: 0;
+
+        background-color: var(--bgColor-default, var(--color-canvas-default));
+        color: #fff;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      height="195px"
+      src="http://localhost:9000/top-langs?username=kyleaupton&exclude_repo=node-wimlib-split,lan-scan&layout=compact&theme=github_dark"
+      alt="Kyle Language stats"
+    />
+
+    <img
+      height="195px"
+      src="http://localhost:9000/gist?id=bbfce31e0217a3689c8d961a356cb10d"
+      alt="Kyle Language stats"
+    />
+  </body>
+</html>
